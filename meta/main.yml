@@ -1,4 +1,5 @@
 galaxy_info:
+  role_name: dotnet_dev
   author: gr4unch3r
   namespace: gr4unch3r
   description: Provision a Windows box for .NET development
