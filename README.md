@@ -1,5 +1,7 @@
 # Ansible Dotnet Dev Role
 
+![Ansible Role](https://img.shields.io/ansible/role/59123)
+
 Ansible role to provision a Windows box for .NET development, as per Microsoft's [windows-dev-box-setup-scripts](https://github.com/microsoft/windows-dev-box-setup-scripts).
 
 ## Requirements
