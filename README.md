@@ -1,4 +1,4 @@
-# Ansible Dotnet Dev Role 
+# Ansible Dotnet Dev Role
 
 Ansible role to provision a Windows box for .NET development, as per Microsoft's [windows-dev-box-setup-scripts](https://github.com/microsoft/windows-dev-box-setup-scripts).
 
@@ -19,8 +19,8 @@ Ansible role to provision a Windows box for .NET development, as per Microsoft's
 
 ## License
 
-[BSD](https://github.com/gr4unch3r/ansible-role-dotnet-dev/blob/master/LICENSE)
+![GitHub](https://img.shields.io/github/license/gr4unch3r/ansible-role-dotnet-dev)
 
 ## Author Information
 
-gr4unch3r[at]protonmail[dot]com
+gr4unch3r [at] protonmail [dot] com
