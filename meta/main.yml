@@ -3,7 +3,7 @@ galaxy_info:
   author: gr4unch3r
   namespace: gr4unch3r
   description: Provision a Windows box for .NET development
-  license: BSD-3-Clause
+  license: MIT
   min_ansible_version: 2.1
   platforms:
     - name: Windows
