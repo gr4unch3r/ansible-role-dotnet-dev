@@ -1,6 +1,6 @@
 # Ansible Dotnet Dev Role
 
-![Ansible Role](https://img.shields.io/ansible/role/59123?label=galaxy&logo=ansible) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/gr4unch3r/ansible-role-dotnet-dev/galaxy-import?label=import&logo=ansible)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/gr4unch3r/ansible-role-dotnet-dev/galaxy-import?label=Ansible%20Galaxy&logo=ansible)
 
 Ansible role to provision a Windows box for .NET development, as per Microsoft's [windows-dev-box-setup-scripts](https://github.com/microsoft/windows-dev-box-setup-scripts).
 
