@@ -21,7 +21,7 @@ Ansible role to provision a Windows box for .NET development, as per Microsoft's
 
 ## License
 
-![GitHub](https://img.shields.io/github/license/gr4unch3r/ansible-role-dotnet-dev)
+MIT
 
 ## Author Information
 
