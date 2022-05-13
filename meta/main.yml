@@ -1,10 +1,9 @@
 galaxy_info:
   role_name: dotnet_dev
   author: gr4unch3r
-  namespace: gr4unch3r
   description: Provision a Windows box for .NET development
   license: MIT
-  min_ansible_version: 2.1
+  min_ansible_version: '2.1'
   platforms:
     - name: Windows
       versions:

@@ -55,6 +55,9 @@
     data: 2
     type: dword
 
+- name: Refresh registry to make changes take effect
+  ansible.windows.win_shell: RUNDLL32.EXE user32.dll,UpdatePerUserSystemParameters
+
 - name: Remove default apps
   ansible.windows.win_package:
     product_id: "{{ item }}"
@@ -89,22 +92,3 @@
   with_items:
     - visualstudio2019-workload-azure
     - visualstudio2019-workload-manageddesktop
-
-- name: Ensure UAC is enabled
-  ansible.windows.win_regedit:
-    path: HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System
-    name: EnableLUA
-    data: 1
-    type: dword
-
-- name: Ensure Windows Updates are enabled
-  ansible.windows.win_service:
-    name: wuauserv
-    start_mode: auto
-    state: started
-
-- name: Install updates
-  ansible.windows.win_updates:
-    category_names: '*'
-    server_selection: windows_update
-    reboot: true

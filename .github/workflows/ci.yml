@@ -1,0 +1,32 @@
+---
+name: CI
+
+on: push
+
+jobs:
+
+  deploy:
+    name: galaxy-import
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Publish role to Ansible Galaxy
+        uses: robertdebock/galaxy-action@1.2.0
+        with:
+          galaxy_api_key: ${{ secrets.GALAXY_API_KEY }}
+
+  test:
+    name: vagrant-test
+    runs-on: macos-10.15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install Ansible
+        run: python3 -m pip install -r tests/requirements.txt
+
+      - name: Test role
+        run: vagrant up
+        working-directory: tests
