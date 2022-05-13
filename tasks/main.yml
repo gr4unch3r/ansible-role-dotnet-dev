@@ -76,10 +76,9 @@
     package_params: "'/GitAndUnixToolsOnPath /WindowsTerminal'"
     state: present
 
-- name: Install VS with Git
+- name: Install VS
   chocolatey.chocolatey.win_chocolatey:
-    name: visualstudio2019community
-    package_params: "'--add Microsoft.VisualStudio.Component.Git'"
+    name: visualstudio2022community
     state: present
 
 - name: refreshenv
@@ -90,5 +89,5 @@
     name: "{{ item }}"
     state: present
   with_items:
-    - visualstudio2019-workload-azure
-    - visualstudio2019-workload-manageddesktop
+    - visualstudio2022-workload-azure
+    - visualstudio2022-workload-manageddesktop

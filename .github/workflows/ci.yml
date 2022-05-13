@@ -5,7 +5,7 @@ on: push
 
 jobs:
 
-  deploy:
+  release:
     name: galaxy-import
     runs-on: ubuntu-latest
     steps:
