@@ -24,6 +24,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      - name: Upgrade pip
+        run: python3 -m pip install --upgrade pip
+
       - name: Install Ansible
         run: python3 -m pip install -r tests/requirements.txt
 
