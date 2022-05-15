@@ -1,7 +1,4 @@
 ---
-roles: 
-- src: gr4unch3r.dotnet_dev
-
 collections:
 - ansible.windows
 - chocolatey.chocolatey

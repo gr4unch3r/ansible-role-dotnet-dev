@@ -14,7 +14,6 @@ Ansible role to provision a Windows box for .NET development, as per Microsoft's
 
 ```
 - hosts: all
-  become: true
   roles:
     - gr4unch3r.dotnet_dev
 ```

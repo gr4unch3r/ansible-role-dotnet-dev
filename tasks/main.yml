@@ -73,7 +73,7 @@
 - name: Install Git
   chocolatey.chocolatey.win_chocolatey:
     name: git
-    package_params: "'/GitAndUnixToolsOnPath /WindowsTerminal'"
+    package_params: "'/GitAndUnixToolsOnPath'"
     state: present
 
 - name: Install VS
