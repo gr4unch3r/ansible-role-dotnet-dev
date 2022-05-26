@@ -16,10 +16,14 @@ jobs:
         run: python3 -m pip install --upgrade pip
 
       - name: Install Ansible
-        run: python3 -m pip install -r tests/requirements.txt
+        run: python3 -m pip install ansible pywinrm
 
       - name: Test role
         run: vagrant up
+        working-directory: tests
+
+      - name: Destroy Vagrant box
+        run: vagrant destroy -f
         working-directory: tests
 
   release:
